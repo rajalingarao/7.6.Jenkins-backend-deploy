@@ -17,8 +17,7 @@ pipeline {
 
     environment {
         def appVersion = '' //variable declaration here.
-        nexusURl = 'nexus.lithesh.shop:8081'
-    }
+      }
     stages {
         stage('Print the version') {
             steps {
