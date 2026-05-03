@@ -22,6 +22,7 @@ pipeline {
         stage('Clean') {
               steps {
                   deleteDir()
+                  checkout scm
               }
           }
         stage('Print the version') {
