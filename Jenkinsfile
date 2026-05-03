@@ -19,12 +19,12 @@ pipeline {
         def appVersion = '' //variable declaration here.
       }
     stages {
-        stage('Clean') {
-              steps {
-                  deleteDir()
-                  checkout scm
-              }
-          }
+        // stage('Clean') {
+        //       steps {
+        //           deleteDir()
+        //           checkout scm
+        //       }
+        //   }
         stage('Print the version') {
             steps {
                 script {
