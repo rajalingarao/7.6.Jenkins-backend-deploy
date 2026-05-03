@@ -19,6 +19,11 @@ pipeline {
         def appVersion = '' //variable declaration here.
       }
     stages {
+        stage('Clean') {
+              steps {
+                  deleteDir()
+              }
+          }
         stage('Print the version') {
             steps {
                 script {
